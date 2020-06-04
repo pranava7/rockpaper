@@ -1,0 +1,2 @@
+rootProject.name='rockpaper'
+include ':app'

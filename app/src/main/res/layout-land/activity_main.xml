@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/player1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Player1 name"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <EditText android:id="@+id/player2_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player2 name"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/player1_name"/>
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 2 Player game"
+        android:background="@drawable/gradient_normal"
+        android:textStyle="italic"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 1 player game"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gradient_normal"
+        android:textStyle="italic"
+        android:layout_below="@id/button"/>
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="Enter No. of Rounds"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
